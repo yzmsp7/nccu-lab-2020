@@ -7,7 +7,10 @@ http://credit-card-web-nccu-lab2-common.nccu-lab-teacher-4c2f3918c1e51a612ffc44c
 ```
 ![Image lab-env](https://raw.githubusercontent.com/j3ffk3/nccu-lab-2020/main/imgs/lab1-before.PNG)
 
-2.抓取程式碼至你的工作機  
+2.抓取程式碼至你的工作機 ，並切換至 recommendation 目錄  
+```
+cd recommendation
+```
 3.單元測試
 ```
 mvn test
