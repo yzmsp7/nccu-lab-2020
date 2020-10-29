@@ -35,10 +35,19 @@
 | 無  | 0 |
 | 有其他優惠  | 100  |
 
-## LAB1-手動佈署推薦微服務 
+## Lab2-1 體驗單元測試 (1分)
 https://github.com/j3ffk3/nccu-lab-2020/blob/main/recommendation/LAB1.md
-## LAB2-為推薦微服務建立CI/CD Pipeline
-https://github.com/j3ffk3/nccu-lab-2020/blob/main/recommendation/LAB2.md
+## Lab2-2 體驗程式碼品質分析 (1分)
+https://github.com/j3ffk3/nccu-lab-2020/blob/main/recommendation/LAB1.md
+## Lab2-3 體驗手動部署應用 (1分)
+https://github.com/j3ffk3/nccu-lab-2020/blob/main/recommendation/LAB1.md
+## Lab2-4 完成 Jenkinsfile (1分)
+https://github.com/j3ffk3/nccu-lab-2020/blob/main/recommendation/LAB1.md
+## Lab2-5 設定 Pipeline (1分)
+https://github.com/j3ffk3/nccu-lab-2020/blob/main/recommendation/LAB1.md
+## Lab2-6 設定 WebHook (1分)
+https://github.com/j3ffk3/nccu-lab-2020/blob/main/recommendation/LAB1.md
+
 ## 小遊戲
 - 依照組別討論一下，依照大家的生活經驗來說，以上四個評分項目的佔比是否有些可以提高，有些可以降低呢?
 - 討論完成後，嘗試調整每個評分項目的百分比。
