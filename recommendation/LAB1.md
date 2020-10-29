@@ -36,7 +36,7 @@ mvn clean package -DskipTests
 ```
 oc login https://c100-e.jp-tok.containers.cloud.ibm.com:32043 --token=${你的Token}
 ```
-- 逐行執行以下指令，佈署應用程式
+- 執行以下指令，佈署應用程式(該指令將會自動把你的Java應用程式容器化後部屬至OpenShift)。
 ```
 oc start-build bc/recommendation --from-file ./target/recommendation-0.0.1-SNAPSHOT.jar
 ```
