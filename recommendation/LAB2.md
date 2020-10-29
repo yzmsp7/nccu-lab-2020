@@ -69,30 +69,10 @@ stage('Build Image & Deploy') {
 	}
 }
 ```
-7.利用文字編輯器打開 recommendation\pipeline.yaml，將${GIT_URL}取代為你git的位置後存檔。
-```
-kind: "BuildConfig"
-apiVersion: "build.openshift.io/v1"
-metadata:
-  name: "recommendation-pipeline"
-spec:
-  source:
-    contextDir: recommendation/src/main/resources/
-    git:
-      uri: "${GIT_URL}"
-      ref: "main"
-  strategy:
-    jenkinsPipelineStrategy:
-      type: JenkinsPipeline
-      jenkinsfilePath: Jenkinsfile
-```
-8.於 OpenShift 上建立 Pipeline
-```
-oc create -f pipeline.yaml
-```
-9.進入OpenShift 點選 start build 按鈕。
+7.
+8.進入OpenShift 點選 start build 按鈕。
 ![Image lab-env](https://raw.githubusercontent.com/j3ffk3/nccu-lab-2020/main/imgs/lab2-start-build.PNG)
-10.可以看到流程正常執行完畢。 
+9.可以看到流程正常執行完畢。 
 ![Image lab-env](https://raw.githubusercontent.com/j3ffk3/nccu-lab-2020/main/imgs/build-success.PNG)
 
 ## 設定Webhook (1 分)
@@ -111,5 +91,8 @@ oc describe bc/recommendation-pipeline
 ![Image lab-env](https://raw.githubusercontent.com/j3ffk3/nccu-lab-2020/main/imgs/lab2-webhook2.PNG)
 
 4.驗證
-嘗試把RecommendationCtl.java 中的getRecommandateCreditCard() method中的回傳筆數由3改成5，看看CI/CD Pipeline 流程是否正常啟動。 
-
+- 嘗試在GitHub上直接編輯，把RecommendationCtl.java 內的 getRecommandateCreditCard() method 的回傳筆數由3改成5，看看CI/CD Pipeline 流程是否正常啟動
+- 完成後發現 Web UI 上推薦的筆數變為5筆了，Web連結如下。
+```
+http://credit-card-web-nccu-lab2-common.nccu-lab-teacher-4c2f3918c1e51a612ffc44c361c1a42f-0000.jp-tok.containers.appdomain.cloud/
+```
