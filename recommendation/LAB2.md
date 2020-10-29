@@ -76,7 +76,7 @@ stage('Build Image & Deploy') {
 ![Image lab-env](https://raw.githubusercontent.com/j3ffk3/nccu-lab-2020/main/imgs/build-success.PNG)
 
 ## 設定Webhook (1 分)
-再有Pipeline的情況下上版還是需要用手去按，整合Webhook後在程式碼異動後將自動觸發流程，進一步加速團隊的開發協作速度。
+再有Pipeline的情況下上版還是需要用手去按，整合Webhook後在程式碼異動後將自動觸發流程，進一步加速團隊的開發協作速度。  
 1.執行以下指令為pipeline 加入 webhook
 ```
 oc set triggers bc/recommendation-pipeline --from-webhook
