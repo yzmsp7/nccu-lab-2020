@@ -77,14 +77,14 @@ metadata:
   name: "recommendation-pipeline"
 spec:
   source:
-    contextDir: recommendation
+    contextDir: recommendation/src/main/resources/
     git:
       uri: "${GIT_URL}"
       ref: "main"
   strategy:
     jenkinsPipelineStrategy:
       type: JenkinsPipeline
-      jenkinsfilePath: /src/main/resources/Jenkinsfile
+      jenkinsfilePath: Jenkinsfile
 ```
 8.於 OpenShift 上建立 Pipeline
 ```
