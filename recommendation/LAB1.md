@@ -9,7 +9,8 @@ http://credit-card-web-nccu-lab2-common.nccu-lab-teacher-4c2f3918c1e51a612ffc44c
 
 2.抓取程式碼至你的工作機 ，並切換至 recommendation 目錄  
 ```
-cd recommendation
+git clone https://github.com/${你的GIT帳號}/nccu-lab-2020.git
+cd nccu-lab-2020/recommendation/
 ```
 3.單元測試
 ```
