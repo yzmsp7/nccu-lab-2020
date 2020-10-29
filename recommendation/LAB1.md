@@ -30,25 +30,13 @@ http://sonarqube-nccu-cicd.nccu-lab-teacher-4c2f3918c1e51a612ffc44c361c1a42f-000
 mvn clean package -DskipTests
 ```
 
-7.佈署
+7.佈署應用程式
 - 登入OpenShift
+```
+oc login https://c100-e.jp-tok.containers.cloud.ibm.com:32043 --token=${你的Token}
+```
 - 逐行執行以下指令，佈署應用程式
 ```
-# 新增 Build Config
-oc new-build --name=recommendation openjdk-11-rhel7:latest --binary=true
-# 產生 Deployment Config
-oc new-app recommendation  --allow-missing-imagestream-tags
-# 產生 service
-oc expose dc  recommendation --port 8080 
-# 產生 route 供外部應用存取
-oc expose svc recommendation
-# 設定為台灣時間
-oc set env dc/recommendation TZ=Asia/Taipei
-# 設定 GC_MAX_METASPACE_SIZE
-oc set env dc/recommendation GC_MAX_METASPACE_SIZE=500
-# 設定語系
-oc set env dc/recommendation LC_ALL=en_US.utf8
-# 佈署
 oc start-build bc/recommendation --from-file ./target/recommendation-0.0.1-SNAPSHOT.jar
 ```
 
