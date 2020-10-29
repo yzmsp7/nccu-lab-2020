@@ -69,22 +69,20 @@ stage('Build Image & Deploy') {
 	}
 }
 ```
-7.
+
 8.進入OpenShift 點選 start build 按鈕。
 ![Image lab-env](https://raw.githubusercontent.com/j3ffk3/nccu-lab-2020/main/imgs/lab2-start-build.PNG)
 9.可以看到流程正常執行完畢。 
 ![Image lab-env](https://raw.githubusercontent.com/j3ffk3/nccu-lab-2020/main/imgs/build-success.PNG)
 
 ## 設定Webhook (1 分)
-再有Pipeline的情況下上版還是需要用手去按，整合Webhook後在程式碼異動後將自動觸發流程，進一步加速團隊的開發協作速度。  
-1.執行以下指令為pipeline 加入 webhook
+在有Pipeline的情況下上版還是需要用手去按，整合Webhook後在程式碼異動後將自動觸發流程，進一步加速團隊的開發協作速度。
+
+1.OpenShift 提供了啟動 Pipeline 的 API，填上你的學號與密碼後，在 Postman 上嘗試利用POST Method 呼叫，你會發現Pipeline被啟動了
 ```
-oc set triggers bc/recommendation-pipeline --from-webhook
+https://c100-e.jp-tok.containers.cloud.ibm.com:32043/apis/build.openshift.io/v1/namespaces/${你的學號}/buildconfigs/recommendation-pipeline/webhooks/${密碼}/generic
 ```
-2.你將會拿到啟動Pipeline的API，嘗試在利用Postman 上利用POST Method 呼叫，你會發現Pipeline被啟動了
-```
-oc describe bc/recommendation-pipeline
-```
+2.至 OpenShift UI 上查看流程是否正常啟動。
 ![Image lab-env](https://raw.githubusercontent.com/j3ffk3/nccu-lab-2020/main/imgs/lab2-webhook1.PNG)
 3.將此API設定至GitHub，GitHub會於程式碼有異動時自動呼叫Pipeline的API啟動CI/CD流程。
 至github 點選設定 > webhook 貼上步驟1得到的url，即完成設定。
