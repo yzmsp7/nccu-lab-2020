@@ -52,7 +52,7 @@ pipeline {
             steps {
             	dir("recommendation/target") {
 					sh """
-						oc project jeff
+						oc project ibm-jeff
 						oc start-build bc/recommendation --from-file recommendation-0.0.1-SNAPSHOT.jar -F
 					"""
 				}
