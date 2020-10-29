@@ -13,7 +13,7 @@ oc project ${你的學號}
 ```
 cd target 
 ```
-![Image lab-env](https://raw.githubusercontent.com/j3ffk3/nccu-lab-2020/main/imgs/lab2-3-2.PNG)
+![Image lab-env](https://raw.githubusercontent.com/j3ffk3/nccu-lab-2020/main/imgs/lab2-3-2a.PNG)
 
 ## 3.執行以下指令，佈署應用程式(該指令將會自動把你的Java應用程式容器化後部屬至OpenShift)。
 ```
