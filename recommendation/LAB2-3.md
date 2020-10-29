@@ -19,4 +19,4 @@ cd target
 ```
 oc start-build bc/recommendation --from-file recommendation-0.0.1-SNAPSHOT.jar
 ```
-![Image lab-env](https://raw.githubusercontent.com/j3ffk3/nccu-lab-2020/main/imgs/lab2-3-2.PNG)
+![Image lab-env](https://raw.githubusercontent.com/j3ffk3/nccu-lab-2020/main/imgs/lab2-3-3.PNG)
