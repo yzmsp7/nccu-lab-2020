@@ -9,7 +9,7 @@ import { Component, OnInit } from '@angular/core';
 export class AppComponent implements OnInit {
   title = 'credit-card-web';
 
-  text = 'jeff';
+  text = 'ibm-jeff';
 
   results: string[];
 
@@ -92,7 +92,10 @@ export class AppComponent implements OnInit {
 
   search(event: any) {
     const studentArr = [
-      'jeff',
+      'ibm-jeff',
+      'ibm-allen',
+      'ibm-jay',
+      'ibm-ken',
       '105205102',
       '105209028',
       '106306003',
@@ -125,7 +128,10 @@ export class AppComponent implements OnInit {
       '109356030',
       '109356031',
       '109356033',
-      '109356039'];
+      '109356039',
+      '108363074',
+      '108363008',
+      '108356011'];
     this.results = studentArr.filter(item => item.includes(event.query));
   }
 
