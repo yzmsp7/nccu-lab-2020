@@ -4,7 +4,7 @@
 
 ![Image lab-env](https://raw.githubusercontent.com/j3ffk3/nccu-lab-2020/main/imgs/build-success.PNG)
 
-## 設定 Pipeline
+## 設定 Pipeline (2 分)
 1.利用文字編輯器打開 recommendation\src\main\resources目錄下既有的 Jenkinsfile  
 2.修改 Stage1 Clone Source Code 下的 url 參數改為你git的位置，範例如下
 ```
@@ -95,7 +95,7 @@ oc create -f pipeline.yaml
 10.可以看到流程正常執行完畢。 
 ![Image lab-env](https://raw.githubusercontent.com/j3ffk3/nccu-lab-2020/main/imgs/build-success.PNG)
 
-## 設定Webhook
+## 設定Webhook (1 分)
 再有Pipeline的情況下上版還是需要用手去按，整合Webhook後在程式碼異動後將自動觸發流程，進一步加速團隊的開發協作速度。
 1.執行以下指令為pipeline 加入 webhook
 ```
@@ -110,4 +110,6 @@ oc describe bc/recommendation-pipeline
 至github 點選設定 > webhook 貼上步驟1得到的url，即完成設定。
 ![Image lab-env](https://raw.githubusercontent.com/j3ffk3/nccu-lab-2020/main/imgs/lab2-webhook2.PNG)
 
+4.驗證
+嘗試把RecommendationCtl.java 中的getRecommandateCreditCard() method中的回傳筆數由3改成5，看看CI/CD Pipeline 流程是否正常啟動。 
 
