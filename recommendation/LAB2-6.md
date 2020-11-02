@@ -1,4 +1,4 @@
-# Lab2-6 設定 WebHook (1分)
+# Lab2-6 設定 WebHook (Demo)
 在此步驟我們將為LAB2-5完成的 Pipeline 設定WebHook，整合Webhook後在程式碼異動後將自動觸發流程，進一步加速團隊的開發協作速度。
 
 Image lab-env](https://raw.githubusercontent.com/j3ffk3/nccu-lab-2020/main/imgs/build-success.PNG)
