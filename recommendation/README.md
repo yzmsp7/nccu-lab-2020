@@ -35,17 +35,17 @@
 | 無  | 0 |
 | 有其他優惠  | 100  |
 
-## Lab2-1 體驗單元測試 (1分)
+## Lab2-1 體驗單元測試 (2分)
 https://github.com/j3ffk3/nccu-lab-2020/blob/main/recommendation/LAB2-1.md
-## Lab2-2 體驗程式碼品質分析 (1分)
+## Lab2-2 體驗程式碼品質分析 (2分)
 https://github.com/j3ffk3/nccu-lab-2020/blob/main/recommendation/LAB2-2.md
-## Lab2-3 體驗手動部署應用 (1分)
+## Lab2-3 體驗手動部署應用 (2分)
 https://github.com/j3ffk3/nccu-lab-2020/blob/main/recommendation/LAB2-3.md
-## Lab2-4 完成 Jenkinsfile (1分)
+## Lab2-4 完成 Jenkinsfile (Demo)
 https://github.com/j3ffk3/nccu-lab-2020/blob/main/recommendation/LAB2-4.md
-## Lab2-5 設定 Pipeline (1分)
+## Lab2-5 設定 Pipeline (Demo)
 https://github.com/j3ffk3/nccu-lab-2020/blob/main/recommendation/LAB2-5.md
-## Lab2-6 設定 WebHook (1分)
+## Lab2-6 設定 WebHook (Demo)
 https://github.com/j3ffk3/nccu-lab-2020/blob/main/recommendation/LAB2-6.md
 
 ## 小遊戲
