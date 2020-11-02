@@ -1,4 +1,4 @@
-# Lab2-4 完成 Jenkinsfile (1分)
+# Lab2-4 完成 Jenkinsfile (Demo)
 在此步驟我們將完成 Jenkinsfile，串起整個 CI/CD 流程，本範例的內容包含 抓取程式碼、單元測試、程式碼品質分析、編譯Java、容器化與佈署，流程如下圖所示。
 ![Image lab-env](https://raw.githubusercontent.com/j3ffk3/nccu-lab-2020/main/imgs/build-success.PNG)
 
