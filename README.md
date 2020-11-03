@@ -1,6 +1,6 @@
 # nccu-lab-2020
 2020年政大實驗課程使用的Repository
-
+OpenShift Console 登入方式 : https://hackmd.io/@mGh414xAR8-m-StRhI7Gww/ry8tnH9rP
 ## Lab 架構如下圖所示
 ![Image lab-env](imgs/lab-env.PNG)
 ### credit-card (信用卡微服務)
